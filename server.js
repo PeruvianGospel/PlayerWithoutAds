@@ -5,8 +5,10 @@ const port = 5000
 const puppeteer = require('puppeteer');
 
 
-
-app.get('/', (req, res) => {
+app.get('/',(req,res)=> {
+	res.send('GO')
+} )
+app.get('/video', (req, res) => {
 	let serve = req.query.server;
 	let url = req.query.url;
 	  
