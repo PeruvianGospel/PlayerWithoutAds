@@ -1,9 +1,10 @@
 {
   "name": "player",
   "version": "1.0.0",
-  "description": "Player propio para eliminar ads de host externos de Streamxus.xyz ",
-  "main": "index.js",
+  "description": "Player propio para eliminar ads",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "PeruvianGospel",
