@@ -27,6 +27,7 @@ app.get('/video', (req, res) => {
         : puppeteer.executablePath(),});
 				const page = await browser.newPage();
 				await page.goto(url);
+				await page.waitForSelector('#message > img');	
 				await page.click('#message > img');
 				await page.waitForSelector('video');		
 				await page.click('video');
